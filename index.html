@@ -21,6 +21,16 @@
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
     <script>
+        const teks = "Saifu";
+        let i = 0;
+        setInterval(() => {
+            if (i < teks.length) {
+                document.getElementById("nama").textContent += teks[i];
+                i++;
+            }
+        }, 150);
+
+
         AOS.init();
     </script>
     <header class="navbar-nav">
@@ -58,7 +68,9 @@
     <section class=" hero-section" data-aos="fade-up" data-aos-delay="200">
         <div class="intro-text" data-aos="fade-up" data-aos-delay="200">
             <span class="hello">HELLO</span>
-            <h1>I'm <br> <span class="highlight">Saifu</span> Badawi</h1>
+            <h1>
+                I'm <br> <span id=nama class="highlight"></span> Badawi
+            </h1>
             <p>Saya Seorang mahasiswa dari universitas muhammadiyah sumatera utara
                 dari jurusan Sistem Informasi
             </p>
@@ -106,16 +118,17 @@
         </div>
     </section>
     <section class="skill" id="skill" data-aos="fade-up" data-aos-delay="300">
-        <div class="skill-conten">
-            <h2><span class="highlight">Skill</span></h2>
-            <div class="skill-list" data-aos="fade-up" data-aos-delay="300">
+
+        <h2><span class="highlight">Skill</span></h2>
+        <div class="skill-list" data-aos="fade-up" data-aos-delay="300">
+            <div class="skill-slider">
                 <div class="skill-html">
                     <i class="fab fa-html5"></i>
-                    <p> HTML</p>
+                    <p>HTML</p>
                 </div>
                 <div class="skill-css">
                     <i class="fab fa-css3-alt"></i>
-                    <p>Css</p>
+                    <p>CSS</p>
                 </div>
                 <div class="skill-java">
                     <i class="fab fa-java"></i>
@@ -128,6 +141,10 @@
                 <div class="skill-3D">
                     <i class="fas fa-cube"></i>
                     <p>3D Animation</p>
+                </div>
+                <div class="skill-sql">
+                    <i class="fas fa-database"></i>
+                    <p>SQL</p>
                 </div>
             </div>
     </section>
@@ -143,7 +160,7 @@
             </div>
             <div class="projek-img" data-aos="fade-up" data-aos-delay="300">
                 <p>Python</p>
-                <img src="img/20240113_203516.jpg" alt="Foto python">
+                <img src="img/python prj.png" alt="Foto python">
                 <a href="projek/security_camera.py" class="download" download>
                     Download Project Python
                 </a>
