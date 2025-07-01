@@ -199,14 +199,47 @@ p {
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 }
 
+.skill-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding-bottom: 20px;
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.skill-slider::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Edge */
+}
+
+.skill-item {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: 180px;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+/* 
+
 .skill-list {
+    width: 100%;
+    gap: 10px;
+    overflow: hidden;
     display: flex;
     padding: 5px;
-    justify-content: center;
+    border-radius: 10px;
+    height: var(--height);
     margin: 0px;
     background-color: #ecf7f2d6;
     box-shadow: 0 4px 100px #cbf8ee
-}
+} */
 
 .skill-list p {
     color: #333;
@@ -215,44 +248,89 @@ p {
 }
 
 .skill-html {
-    margin: auto;
-    padding: 10px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: 180px;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     font-weight: bold;
-    font-size: 55px;
     color: #f57044;
+    font-size: 50px;
 }
 
 .skill-css {
-    margin: auto;
-    padding: 10px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: 180px;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     font-weight: bold;
-    font-size: 55px;
     color: #264de4;
+    font-size: 50px;
 }
 
 .skill-java {
-    margin: auto;
-    padding: 10px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: 180px;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     font-weight: bold;
-    font-size: 55px;
     color: #f89820;
+    font-size: 50px;
 }
 
 .skill-python {
-    margin: auto;
-    padding: 10px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: 180px;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     font-weight: bold;
-    font-size: 55px;
     color: #3776ab;
+    font-size: 50px;
 }
 
 .skill-3D {
-    margin: auto;
-    padding: 10px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: 180px;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     font-weight: bold;
-    font-size: 50px;
     color: #ff7f50;
+    font-size: 50px;
 }
+
+.skill-sql {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: 180px;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    color: #508dff;
+    font-size: 40px;
+}
+
 
 .projek {
     padding: 100px 20px;
@@ -439,6 +517,7 @@ p {
 
     .skill {
         padding: 0 5pc;
+        width: 100%;
 
     }
 
@@ -448,14 +527,22 @@ p {
         margin: 0;
     }
 
+    /* 
     .skill-list {
         flex-direction: column;
         padding: 0;
         margin: 0;
+    } */
+    .skill-list {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        overflow-x: auto;
     }
 
     .skill-html i {
         margin: auto;
+        flex-shrink: 0;
         border-radius: 10px;
         font-weight: bold;
         font-size: 50px;
@@ -464,6 +551,7 @@ p {
 
     .skill-css i {
         margin: auto;
+        flex-shrink: 0;
         border-radius: 10px;
         font-weight: bold;
         font-size: 55px;
@@ -473,6 +561,7 @@ p {
     .skill-java i {
         margin: auto;
         border-radius: 10px;
+        flex-shrink: 0;
         font-weight: bold;
         font-size: 55px;
         color: #f89820;
@@ -481,6 +570,7 @@ p {
     .skill-python i {
         margin: auto;
         border-radius: 10px;
+        flex-shrink: 0;
         font-weight: bold;
         font-size: 55px;
         color: #3776ab;
@@ -490,9 +580,20 @@ p {
         margin: auto;
         border-radius: 10px;
         font-weight: bold;
+        flex-shrink: 0;
         font-size: 50px;
         color: #ff7f50;
     }
+
+    .skill-sql i {
+        margin: auto;
+        border-radius: 10px;
+        font-weight: bold;
+        flex-shrink: 0;
+        font-size: 50px;
+        color: #50a5ff;
+    }
+
 
 
     .projek h2 {
