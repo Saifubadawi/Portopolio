@@ -331,6 +331,44 @@ p {
     font-size: 40px;
 }
 
+.certificate {
+    margin-top: 60px;
+    padding: 20px;
+    text-align: center;
+}
+
+.certificate-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.certificate-item {
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.certificate-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.certificate-item p {
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+}
 
 .projek {
     padding: 100px 20px;
@@ -594,52 +632,64 @@ p {
         color: #50a5ff;
     }
 
-
-
-    .projek h2 {
-        font-size: 30px;
-        font-weight: bold;
-        margin: 0;
+    .certificate {
+        padding: 20px;
+        text-align: center;
     }
 
-    .projek p {
-        font-size: 20px;
-        font-weight: bold;
-        margin: 0;
+    .certificate h2 {
+        font-size: 22px;
     }
 
-    .projek-img img {
-        width: 100%;
-        height: auto;
-        margin: auto;
-        margin-bottom: 10px;
+    .certificate-item p {
+        font-size: 13px;
     }
+}
 
-    .download {
-        margin: 20px auto;
-        justify-content: center;
-    }
 
-    .contact-media h2 {
-        font-size: 20px;
-        font-weight: bold;
-        margin: 0;
-    }
+.projek h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+}
 
-    .contact-details p,
-    i {
-        font-size: 15px;
-        font-weight: bold;
-        margin: 0;
-        font-family: 'Segoe UI', sans-serif;
-    }
+.projek p {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
 
-    .contact-details {
-        flex-direction: column;
-        padding: 0 10px;
-    }
+.projek-img img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 10px;
+}
 
-    .back-top {
-        font-size: 10px;
-    }
+.download {
+    margin: 20px auto;
+    justify-content: center;
+}
+
+.contact-media h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.contact-details p,
+i {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.contact-details {
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.back-top {
+    font-size: 10px;
 }
