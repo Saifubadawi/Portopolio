@@ -430,6 +430,11 @@ p {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 
 }
+.projek p {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
 
 .download {
     display: flex;
@@ -702,3 +707,4 @@ i {
 .back-top {
     font-size: 10px;
 }
+
