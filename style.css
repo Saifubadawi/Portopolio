@@ -246,13 +246,14 @@ p {
     font-weight: bold;
     font-size: 20px;
 }
+
 .skill-html i,
 .skill-css i,
 .skill-java i,
 .skill-python i,
 .skill-3D i,
 .skill-sql i {
-  font-size: 60px;
+    font-size: 60px;
 }
 
 
@@ -339,6 +340,22 @@ p {
     color: #508dff;
     font-size: 40px;
 }
+
+/* 
+.skill-laravel {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: 180px;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    color: #ff2d20;
+    font-size: 50px;
+} */
+
 
 .certificate {
     margin-top: 60px;
@@ -430,6 +447,7 @@ p {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 
 }
+
 .projek p {
     font-size: 20px;
     font-weight: bold;
@@ -567,83 +585,90 @@ p {
         font-family: 'Segoe UI', sans-serif;
     }
 
+    /* SECTION */
     .skill {
         padding: 0 5pc;
         width: 100%;
-
     }
 
     .skill h2 {
         font-size: 30px;
         font-weight: bold;
-        margin: 0;
+        margin-bottom: 30px;
     }
 
-    /* 
-    .skill-list {
-        flex-direction: column;
-        padding: 0;
-        margin: 0;
-    } */
+    /* LIST SKILL */
     .skill-list {
         width: 100%;
-        display: flex;
-        gap: 10px;
-        overflow-x: auto;
     }
 
-    .skill-html i {
-        margin: auto;
-        flex-shrink: 0;
-        border-radius: 10px;
-        font-weight: bold;
+    .skill-slider {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 25px;
+    }
+
+    /* CARD */
+    .skill-slider>div {
+        background: #ffffff;
+        border-radius: 16px;
+        height: 160px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        transition: 0.3s ease;
+    }
+
+    .skill-slider>div:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15);
+    }
+
+    /* ICON */
+    .skill-slider i {
         font-size: 50px;
+        margin-bottom: 10px;
+    }
+
+    /* TEXT */
+    .skill-slider p {
+        font-weight: 600;
+        font-size: 16px;
+        color: #333;
+    }
+
+    /* ICON COLORS */
+    .skill-html i {
         color: #f57044;
     }
 
     .skill-css i {
-        margin: auto;
-        flex-shrink: 0;
-        border-radius: 10px;
-        font-weight: bold;
-        font-size: 55px;
         color: #264de4;
+        font-size: 55px;
     }
 
     .skill-java i {
-        margin: auto;
-        border-radius: 10px;
-        flex-shrink: 0;
-        font-weight: bold;
-        font-size: 55px;
         color: #f89820;
+        font-size: 55px;
     }
 
     .skill-python i {
-        margin: auto;
-        border-radius: 10px;
-        flex-shrink: 0;
-        font-weight: bold;
-        font-size: 55px;
         color: #3776ab;
+        font-size: 55px;
     }
 
     .skill-3D i {
-        margin: auto;
-        border-radius: 10px;
-        font-weight: bold;
-        flex-shrink: 0;
-        font-size: 50px;
         color: #ff7f50;
     }
 
     .skill-sql i {
-        margin: auto;
-        border-radius: 10px;
-        font-weight: bold;
-        flex-shrink: 0;
-        font-size: 50px;
         color: #50a5ff;
+    }
+
+    .skill-java i.fa-laravel {
+        color: #ff2d20;
     }
 
     .certificate {
@@ -707,4 +732,3 @@ i {
 .back-top {
     font-size: 10px;
 }
-
