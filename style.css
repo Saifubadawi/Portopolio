@@ -529,7 +529,7 @@ p {
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1440px) {
     .hero-section {
         flex-direction: column-reverse;
         width: 100%;
@@ -732,4 +732,5 @@ i {
 .back-top {
     font-size: 10px;
 }
+
 
