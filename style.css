@@ -341,7 +341,7 @@ p {
     font-size: 40px;
 }
 
-/* 
+
 .skill-laravel {
     flex: 0 0 auto;
     scroll-snap-align: start;
@@ -354,7 +354,7 @@ p {
     font-weight: bold;
     color: #ff2d20;
     font-size: 50px;
-} */
+}
 
 
 .certificate {
@@ -732,3 +732,4 @@ i {
 .back-top {
     font-size: 10px;
 }
+
