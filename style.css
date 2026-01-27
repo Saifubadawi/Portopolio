@@ -341,7 +341,7 @@ p {
     font-size: 40px;
 }
 
-
+/* 
 .skill-laravel {
     flex: 0 0 auto;
     scroll-snap-align: start;
@@ -354,7 +354,7 @@ p {
     font-weight: bold;
     color: #ff2d20;
     font-size: 50px;
-}
+} */
 
 
 .certificate {
@@ -529,7 +529,7 @@ p {
 
 
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 768px) {
     .hero-section {
         flex-direction: column-reverse;
         width: 100%;
@@ -734,3 +734,91 @@ i {
 }
 
 
+@media screen and (max-width: 1440px) {
+
+    /* SECTION */
+    .skill {
+        padding: 0 5pc;
+        width: 100%;
+    }
+
+    .skill h2 {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    /* LIST SKILL */
+    .skill-list {
+        width: 100%;
+    }
+
+    .skill-slider {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 25px;
+    }
+
+    /* CARD */
+    .skill-slider>div {
+        background: #ffffff;
+        border-radius: 16px;
+        height: 160px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        transition: 0.3s ease;
+    }
+
+    .skill-slider>div:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15);
+    }
+
+    /* ICON */
+    .skill-slider i {
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+
+    /* TEXT */
+    .skill-slider p {
+        font-weight: 600;
+        font-size: 16px;
+        color: #333;
+    }
+
+    /* ICON COLORS */
+    .skill-html i {
+        color: #f57044;
+    }
+
+    .skill-css i {
+        color: #264de4;
+        font-size: 55px;
+    }
+
+    .skill-java i {
+        color: #f89820;
+        font-size: 55px;
+    }
+
+    .skill-python i {
+        color: #3776ab;
+        font-size: 55px;
+    }
+
+    .skill-3D i {
+        color: #ff7f50;
+    }
+
+    .skill-sql i {
+        color: #50a5ff;
+    }
+
+    .skill-java i.fa-laravel {
+        color: #ff2d20;
+    }
+}
