@@ -822,3 +822,24 @@ i {
         color: #ff2d20;
     }
 }
+
+@media (max-width: 768px) {
+
+    .navbar-nav {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-item {
+        text-align: center;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+
+}
+
